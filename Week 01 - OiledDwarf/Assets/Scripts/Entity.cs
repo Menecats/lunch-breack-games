@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class Entity : MonoBehaviour {
+    public float maxSpeed = 40f;
 	public float speed = 10f;
 
 	public GamePath currentPath {get; private set;}
