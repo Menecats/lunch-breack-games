@@ -10,6 +10,5 @@ public class PlayerThrow : MonoBehaviour {
 	}
 	
 	void Update () {
-		
 	}
 }
