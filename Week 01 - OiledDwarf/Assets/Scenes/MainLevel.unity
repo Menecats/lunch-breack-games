@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731725, g: 0.13414747, b: 0.121078715, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3783,7 +3783,6 @@ GameObject:
   - component: {fileID: 1135469117}
   - component: {fileID: 1135469120}
   - component: {fileID: 1135469119}
-  - component: {fileID: 1135469118}
   m_Layer: 0
   m_Name: Shirt
   m_TagString: Untagged
@@ -3804,18 +3803,6 @@ Transform:
   m_Father: {fileID: 1553301365}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -30.636002, y: 0, z: 0}
---- !u!65 &1135469118
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1135469116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1135469119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4566,6 +4553,7 @@ Transform:
   m_Children:
   - {fileID: 282840814}
   - {fileID: 128021217}
+  - {fileID: 1901136913}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4580,6 +4568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d8f41a78e354137afdc0f957754d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectlePrefab: {fileID: 1323572969885714, guid: 24efcb777e9904edf88e8e5a3e98bc70,
+    type: 2}
+  firePoint: {fileID: 1901136913}
 --- !u!4 &1362311309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 468796, guid: b0b1b78b18bda4b70933750539fef445, type: 2}
@@ -6518,6 +6509,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02e13c672a7514083bab38bd97f12362, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1901136912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1901136913}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1901136913
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1901136912}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.43, y: -0.149, z: -0.285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1350018826}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &1923595470 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462800, guid: 02e13c672a7514083bab38bd97f12362, type: 2}
