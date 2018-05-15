@@ -19,7 +19,11 @@ public class ThrowableItem : MonoBehaviour {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, effectRadius);
         foreach (Collider item in hitColliders)
         {
-            Debug.Log(item.gameObject.name);
+            Entity e = item.gameObject.GetComponent<Entity>();
+            
+            if(e != null) {
+                e.Die();
+            }
         }
         ParticleSystem ps = Instantiate(breakEffectPrefab, transform.position, Quaternion.identity);
         Destroy(ps.gameObject, 5f);

@@ -4571,6 +4571,8 @@ MonoBehaviour:
   projectlePrefab: {fileID: 1323572969885714, guid: 24efcb777e9904edf88e8e5a3e98bc70,
     type: 2}
   firePoint: {fileID: 1901136913}
+  modifier: 1
+  adjustAngle: 45
 --- !u!4 &1362311309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 468796, guid: b0b1b78b18bda4b70933750539fef445, type: 2}

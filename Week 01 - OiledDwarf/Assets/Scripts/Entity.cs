@@ -24,4 +24,12 @@ public class Entity : MonoBehaviour {
 
 		Destroy(gameObject);
 	}
+
+	public void Die() {
+		this.currentPath = null;
+
+		Debug.Log("Dead");
+
+		Destroy(gameObject);
+	}
 }
