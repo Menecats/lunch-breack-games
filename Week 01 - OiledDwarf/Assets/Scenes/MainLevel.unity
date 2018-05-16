@@ -855,10 +855,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 282840810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: e900c59b6b1dd45b9b31834e221f273d, type: 2}
+  sharedProfile: {fileID: 11400000, guid: e900c59b6b1dd45b9b31834e221f273d, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0

@@ -9,16 +9,16 @@ public class PlayerThrow : MonoBehaviour {
 	public float modifier = 3f;
 	public float adjustAngle = 30f;
 
-	Camera camera;
+	Camera mainCamera;
 
 	void Start() {
-		camera = GetComponentInChildren<Camera>();
+		mainCamera = GetComponentInChildren<Camera>();
 	}
 	
 	void Update() {
 		if (Input.GetMouseButtonDown(0)) {
 			RaycastHit hit;
-        	Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        	Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         
 			if (Physics.Raycast(ray, out hit)) {
 				Transform objectHit = hit.transform;
