@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731725, g: 0.13414747, b: 0.121078715, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4793,6 +4793,9 @@ MonoBehaviour:
   firePoint: {fileID: 1901136913}
   modifier: 1
   adjustAngle: 45
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 1536
 --- !u!4 &1362311309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 468796, guid: b0b1b78b18bda4b70933750539fef445, type: 2}

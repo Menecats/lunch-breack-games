@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4827936768298028}
   - component: {fileID: 33438538931200210}
   - component: {fileID: 23874596519838052}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114512693008149154}
   - component: {fileID: 114458387741179590}
   - component: {fileID: 65746775242241394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

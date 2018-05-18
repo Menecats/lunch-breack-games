@@ -10,6 +10,7 @@ public class PlayerThrow : MonoBehaviour {
 	public float adjustAngle = 30f;
 
 	Camera mainCamera;
+	public LayerMask collisionMask = -1;
 
 	void Start() {
 		mainCamera = GetComponentInChildren<Camera>();
@@ -20,10 +21,8 @@ public class PlayerThrow : MonoBehaviour {
 			RaycastHit hit;
         	Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         
-			if (Physics.Raycast(ray, out hit)) {
-				Transform objectHit = hit.transform;
-
-				ThrowItem(objectHit.position);
+			if (Physics.Raycast(ray, out hit, 100f, collisionMask.value)) {
+				ThrowItem(hit.point);
 			}
 		}
 	}
