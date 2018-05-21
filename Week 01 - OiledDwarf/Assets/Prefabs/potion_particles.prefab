@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 198639520047923422}
   - component: {fileID: 199395602133579698}
   - component: {fileID: 82567785801937936}
+  - component: {fileID: 114183461981705944}
   m_Layer: 0
   m_Name: potion_particles
   m_TagString: Untagged
@@ -137,6 +138,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114183461981705944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1639420189650186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf325fc8ecf24870903f181c9e8077d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minPitch: 0.8
+  maxPitch: 1.2
 --- !u!198 &198639520047923422
 ParticleSystem:
   m_ObjectHideFlags: 1
