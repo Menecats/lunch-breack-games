@@ -20,15 +20,13 @@ public class Entity : MonoBehaviour {
 	public void Escape() {
 		this.currentPath = null;
 
-		Debug.Log("Escaped");
-
 		Destroy(gameObject);
 	}
 
 	public void Die() {
 		this.currentPath = null;
 
-		Debug.Log("Dead");
+		ScoreManager.instance.IncreaseScore();
 
 		Destroy(gameObject);
 	}
