@@ -1,33 +1,44 @@
 ﻿using UnityEngine;
 
-public class Entity : MonoBehaviour {
+public class Entity : MonoBehaviour
+{
     public float maxSpeed = 40f;
-	public float speed = 10f;
+    public float speed = 10f;
 
-	public GamePath currentPath {get; private set;}
+    public int dieScore = 0;
+    public int escapeScore = 0;
 
-	public void setPath(GamePath path) {
-		this.currentPath = path;
-	}
+    public GamePath currentPath { get; private set; }
 
-	// Update is called once per frame
-	void Update () {
-		if(currentPath == null) {
-			return;
-		}
-	}
+    public void setPath(GamePath path)
+    {
+        this.currentPath = path;
+    }
 
-	public void Escape() {
-		this.currentPath = null;
+    // Update is called once per frame
+    void Update()
+    {
+        if (currentPath == null)
+        {
+            return;
+        }
+    }
 
-		Destroy(gameObject);
-	}
+    public void Escape()
+    {
+        this.currentPath = null;
 
-	public void Die() {
-		this.currentPath = null;
+        ScoreManager.instance.IncreaseScore(escapeScore);
 
-		ScoreManager.instance.IncreaseScore();
+        Destroy(gameObject);
+    }
 
-		Destroy(gameObject);
-	}
+    public void Die()
+    {
+        this.currentPath = null;
+
+        ScoreManager.instance.IncreaseScore(dieScore);
+
+        Destroy(gameObject);
+    }
 }

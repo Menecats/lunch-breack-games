@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowableItem : MonoBehaviour {
-	public ParticleSystem breakEffectPrefab;
-	public float effectRadius = .6f;
+public class ThrowableItem : MonoBehaviour
+{
+    public ParticleSystem breakEffectPrefab;
+    public float effectRadius = .6f;
 
-	void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
 
     public void Explode()
     {
@@ -20,8 +23,9 @@ public class ThrowableItem : MonoBehaviour {
         foreach (Collider item in hitColliders)
         {
             Entity e = item.gameObject.GetComponent<Entity>();
-            
-            if(e != null) {
+
+            if (e != null)
+            {
                 e.Die();
             }
         }

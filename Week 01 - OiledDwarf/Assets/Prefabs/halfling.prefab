@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 114195020052797380}
   - component: {fileID: 114208325731051918}
   - component: {fileID: 114867282136490074}
-  - component: {fileID: 114452336151765756}
   - component: {fileID: 136601594110852244}
   m_Layer: 0
   m_Name: halfling
@@ -783,17 +782,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fc7caf55d32a4db3994cb35a4b65291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114452336151765756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572851255416524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fc100403aa6f420782cda8c10b2c7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114867282136490074
