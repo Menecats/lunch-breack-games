@@ -8,6 +8,8 @@ public class Entity : MonoBehaviour
     public int dieScore = 0;
     public int escapeScore = 0;
 
+    public GameObject dieEffectPrefab;
+
     public GamePath currentPath { get; private set; }
 
     public void setPath(GamePath path)
@@ -38,7 +40,11 @@ public class Entity : MonoBehaviour
         this.currentPath = null;
 
         ScoreManager.instance.IncreaseScore(dieScore);
-
+        if (dieEffectPrefab != null)
+        {
+            GameObject dieEffect = Instantiate(dieEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(dieEffect, 5f);
+        }
         Destroy(gameObject);
     }
 }

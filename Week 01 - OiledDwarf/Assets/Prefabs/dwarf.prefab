@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 114841515272292376}
   - component: {fileID: 136997262030991196}
   m_Layer: 10
-  m_Name: Dwarf
+  m_Name: dwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,6 +785,8 @@ MonoBehaviour:
   speed: 2
   dieScore: 50
   escapeScore: 0
+  dieEffectPrefab: {fileID: 1305205774286788, guid: 4a5a9ba4f6b124f6fbe38ae0ac4e24c7,
+    type: 2}
 --- !u!114 &114841515272292376
 MonoBehaviour:
   m_ObjectHideFlags: 1
