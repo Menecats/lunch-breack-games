@@ -8725,7 +8725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entitiesToSpawn:
   - {fileID: 1571664593708716, guid: d54b3cb3874f74679b7586013a635744, type: 2}
-  - {fileID: 1572851255416524, guid: bcb13b977427d4bf0abcd6552e3c01a5, type: 2}
+  - {fileID: 0}
   entitiesPerMinute: 20
   paths:
   - pathStart: {fileID: 478956128}
