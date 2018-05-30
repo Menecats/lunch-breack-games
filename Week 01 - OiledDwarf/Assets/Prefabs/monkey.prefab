@@ -37,6 +37,8 @@ GameObject:
   - component: {fileID: 95233990686524862}
   - component: {fileID: 54183545353437250}
   - component: {fileID: 135311245638283000}
+  - component: {fileID: 114300295670301510}
+  - component: {fileID: 114145167700744936}
   m_Layer: 0
   m_Name: monkey
   m_TagString: Untagged
@@ -685,6 +687,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114145167700744936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063190388070158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5d2e8fa6f0f9f43ac213a73adedc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwableItem: {fileID: 114300295670301510}
+--- !u!114 &114300295670301510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063190388070158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972fe971f8b3a46fd9f6265c8d6e72cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakEffectPrefab: {fileID: 198337083097863070, guid: 146326e24e8ad42988a6d67cad773982,
+    type: 2}
+  effectRadius: 0.6
 --- !u!135 &135311245638283000
 SphereCollider:
   m_ObjectHideFlags: 1

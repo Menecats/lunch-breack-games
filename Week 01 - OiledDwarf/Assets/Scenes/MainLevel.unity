@@ -5694,7 +5694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d8f41a78e354137afdc0f957754d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectlePrefab: {fileID: 1323572969885714, guid: 24efcb777e9904edf88e8e5a3e98bc70,
+  projectlePrefab: {fileID: 1063190388070158, guid: e4fa641b49f1b4afe8ab0e92f867ef47,
     type: 2}
   firePoint: {fileID: 1901136913}
   throwDelay: 0.5
@@ -8827,7 +8827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entitiesToSpawn:
   - {fileID: 1571664593708716, guid: d54b3cb3874f74679b7586013a635744, type: 2}
-  - {fileID: 0}
+  - {fileID: 1683986668518680, guid: beaa8c0013fbf40f5946c06fd43336d6, type: 2}
   entitiesPerMinute: 20
   paths:
   - pathStart: {fileID: 478956128}
